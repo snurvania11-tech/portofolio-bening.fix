@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-maroon-deep: #4a0404;
+  --color-maroon-main: #800000;
+  --color-maroon-soft: #a52a2a;
+  --color-cream-bg: #fdfaf6;
+  --color-cream-accent: #f5f2ed;
+  --color-cream-dark: #e8e2d6;
+}
+
+body {
+  background-color: var(--color-cream-bg);
+  color: var(--color-maroon-deep);
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: rgba(255, 253, 250, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(128, 0, 0, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #800000, #4a0404);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maroon-button {
+  background-color: var(--color-maroon-main);
+  color: var(--color-cream-bg);
+  transition: all 0.3s ease;
+}
+
+.maroon-button:hover {
+  background-color: var(--color-maroon-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(74, 4, 4, 0.2);
+}
